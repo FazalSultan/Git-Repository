@@ -1,0 +1,41 @@
+							-- Git Commond ith Comments
+-- Required Software/tools for using Git & Gitub:
+	- Git Shoulb be Install in Your Pc [Laptop]
+	- Already Have a Github Account.
+
+Note: If the Above two Steps is Not complete kindly Complete it Before Moving to Next Step!
+------------------------------------------------------------------------------------------------------------------------------------------
+Let Start from the simple Steps.
+-	If you Have some Repos in Your github and You want to download the Contents of a Specfic Repo.
+-	Make a Directory in you PC and open Vs code There.
+-	git clone link of Your Repo(ssh) like : git clone [link]
+
+
+	Wait the files/content will be Download.
+-	Now if You Update some files or wwant to add new features, after adding new features run this commond
+	------>>> git add .
+-	now Commit it to save the changes permanently run this commond ------->> git commit -m "Added New Features".
+-	Now Run this commond ----------->> git status
+-	No your locally repo and Remote are not Same beacuse you added new features locally ,no run this commond to
+	update your Remote repo also --->>>> git push origin main [Here no braches therefore i am pushing it to main] .
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+-	PR means "Pull Request" 
+	Mergin can be Done in two ways.. (01)git merge [brach-name] we use it only whne we have conflict issues.
+-	(02) The PR Event will occure when the user want to Merg the Branche-Changes with the main, this  steps  can be
+	done using github GUI when there is No Conflict..means in the branch and in the main branch.
+
+	Now You Merg the branch wwith main[remote only] if you want to see the chnage locally run this commond:
+	git pull origin main.. and Done.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+	
+						--Undoing Chnages...
+-	Case-1[added but not Commit Yet]............... git reset or git reset[file name]
+-	Case-2[added + commit Also] ---->> and you want one step-back ...........>>> git reset HEAD~1 ,but in case if want to move
+					 back multiple-step then run this commond git log and then git reset[hash of that commit].
+					 if you to hard-reset then run this: git reset --hard [hash]
+	
